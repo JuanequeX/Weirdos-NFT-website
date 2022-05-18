@@ -19,21 +19,21 @@ const Btn = styled.button`
   }
 
   &::after {
-    border: 2px solid ${props => props.theme.text};
     border-radius: 50px;
+    border: 2px solid ${props => props.theme.text};
     content: ' ';
+    height: 100%;
     left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: all 0.2 ease;
     width: 100%;
-    height: 100%;
   }
 
   &:hover::after {
-    transform: translate(-50%, -50%) scale(1);
     padding: 0.3rem;
+    transform: translate(-50%, -50%) scale(1);
   }
 `
 

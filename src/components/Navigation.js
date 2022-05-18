@@ -17,24 +17,24 @@ const NavBar = styled.nav`
   width: 85%;
 `
 const Menu = styled.ul`
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   list-style: none;
 `
 
 const MenuItem = styled.li`
-  margin: 0 1rem;
   color: ${props => props.theme.text};
   cursor: pointer;
+  margin: 0 1rem;
 
   &::after {
     content: ' ';
-    display: block;
-    width: 0%;
-    height: 2px;
     background-color: ${props => props.theme.text};
+    display: block;
+    height: 2px;
     transition: width 0.3s ease;
+    width: 0%;
   }
 
   &:hover::after {
