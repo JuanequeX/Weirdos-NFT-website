@@ -88,7 +88,7 @@ const ItemContainer = styled.div`
 `
 
 const Box = styled.p`
-  background-color: ${props => props.theme.carouselColor}; 
+  background-color: ${props => props.theme.carouselColor};
   border: 1px solid ${props => props.theme.text};
   color: ${props => props.theme.text};
   height: fit-content;
@@ -166,7 +166,7 @@ useLayoutEffect(() => {
 },[])
 
   return (
-    <Section>
+    <Section id='roadmap'>
       <Title>Roadmap</Title>
       <Container>
         <SvgContainer>

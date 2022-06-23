@@ -69,7 +69,7 @@ const Circle = styled.span`
 `
 function Home() {
   return (
-    <Section>
+    <Section id="home">
       <Container>
         <Box>
           <TypeWriterText />
